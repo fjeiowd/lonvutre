@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: dhuieh
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: dhuieh
   template:
     metadata:
       labels:
-        app: ray
+        app: dhuieh
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/dhuieh:latest
+        name: dhuieh
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: Site
-          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+          value: "https://github.com/happyevero/Html/dhuieh/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "75020341-f2eb-4882-9218-a313b4404dfe"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vl51155"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "75020341-f2eb-4882-9218-a313b4404dfe"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vm61166"
         - name: Share_Path
           value: "/v2link"
